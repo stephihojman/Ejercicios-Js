@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Ejercicio JS</title>
+        <script>
+            var sueldoMensual = parseInt(prompt('Ingrese su sueldo básico mensual'));
+            var cantidadSeguros = parseInt(prompt('Ingrese la cantidad de seguros vendidos'));
+            var valorMayorSeguro = parseInt(prompt('Ingrese el valor del seguro más caro vendido'));
+            var premio1 = (25 / 100) * valorMayorSeguro;
+            var premio2 = (15 / 100) * cantidadSeguros;
+            var sueldoFinal = sueldoMensual + premio1 + premio2;
+            document.write('Su sueldo mensual es de: $' + sueldoFinal + '');
+            console.log(sueldoMensual, cantidadSeguros, valorMayorSeguro, premio1, premio2, sueldoFinal);
+        </script>
+    </head>
+    <body>
+        <!-- Realizar un sistema para el cálculo de sueldo de una empresa de seguros. Se le solicita al empleado que ingrese el sueldo básico mensual, la cantidad de seguros vendidos y el valor del seguro más caro vendido. Realice el algoritmo para calcular e informar el sueldo de un empleado en el mes, teniendo en cuenta que se le asigna un premio igual al 25% del seguro más caro vendido y otro premio igual al 15% del sueldo por la cantidad de seguros vendidos. -->
+    </body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Ejercicio JS</title>
+        <script>
+            var sueldoMensual = parseInt(prompt('Ingrese su sueldo básico mensual'));
+            var cantidadSeguros = parseInt(prompt('Ingrese la cantidad de seguros vendidos'));
+            var valorMayorSeguro = parseInt(prompt('Ingrese el valor del seguro más caro vendido'));
+            var premio1 = (25 / 100) * valorMayorSeguro;
+            var premio2 = (15 / 100) * cantidadSeguros;
+            var sueldoFinal = sueldoMensual + premio1 + premio2;
+            document.write('Su sueldo mensual es de: $' + sueldoFinal + '');
+            console.log(sueldoMensual, cantidadSeguros, valorMayorSeguro, premio1, premio2, sueldoFinal);
+        </script>
+    </head>
+    <body>
+        <!-- Se le solicita al usuario que ingrese los extremos de un rango numérico y un número. Realice el algoritmo para informar si el número está dentro del rango. Si está, informar si el número es par. Si no está dentro del rango, informar si es número es impar. Tenga en cuenta que el rango debe tener una diferencia mínima de 5 números enteros. -->
+    </body>
+</html>

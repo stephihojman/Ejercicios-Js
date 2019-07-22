@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Ejercicio JS</title>
+        <script>
+            //isNan metodo (not a number)
+            do {
+                var numero1 = parseFloat(prompt('Ingrese el primer numero'));
+                var numero2 = parseFloat(prompt('Ingrese el segundo numero'));
+                var operador = prompt('Ingrese un operador +, -, *, /, %');
+                var r = confirm('Desea seguir ingresando operaciones?');
+                // do {
+                //     var numero1 = parseFloat(prompt('Ingrese el primer numero'));
+                // } while (isNaN(numero1));
+                // do {
+                //     var numero2 = parseFloat(prompt('Ingrese el segundo numero'));
+                // } while (isNaN(numero2));
+
+                switch (operador) {
+                    case '+':
+                        resultado = numero1 + numero2;
+                        document.write('Usted eligió suma, el resultado es: ' + resultado + '. <br />');
+                        break;
+                    case '-':
+                        resultado = numero1 - numero2;
+                        document.write('Usted eligió resta, el resultado es: ' + resultado + '. <br />');
+                        break;
+                    case '*':
+                        resultado = numero1 * numero2;
+                        document.write('Usted eligió multiplicacion, el resultado es: ' + resultado + '. <br />');
+                        break;
+                    case '/':
+                        resultado = numero1 / numero2;
+                        document.write('Usted eligió division, el resultado es: ' + resultado + '. <br />');
+                        break;
+                    case '%':
+                        resultado = numero1 % numero2;
+                        document.write('Usted eligió modulo, el resultado es: ' + resultado + '. <br />');
+                        break;
+                    default:
+                        document.write('Usted no eligió ninguna operación aceptada. <br />');
+                }
+            } while (r);
+        </script>
+    </head>
+    <body>
+        <!-- Se le solicita al usuario que ingrese dos números y un operador (+, -, *, /, %). Realice el algoritmo para calcular e informar cada operación deseada entre los dos números. Ese proceso se puede repetir mientras lo desee el usuario. -->
+    </body>
+</html>

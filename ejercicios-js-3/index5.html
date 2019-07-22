@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Ejercicio JS</title>
+        <script>
+            do {
+                var numero = parseInt(prompt('Ingrese un número'));
+                var r = confirm('Quiere seguir ingresando números?');
+                if (numero == 0) {
+                    document.write('El número ingresado es igual a 0. <br />');
+                } else if (numero % 2 == 0) {
+                    document.write('El número es par. <br />');
+                } else {
+                    document.write('El número es impar. <br />');
+                }
+            } while (r);
+        </script>
+    </head>
+    <body>
+        <!-- Se le solicita al usuario que ingrese una cantidad de números desconocida. Realice el algoritmo para informar si cada número es cero, par o impar. Todos los valores deben ser validados.-->
+    </body>
+</html>

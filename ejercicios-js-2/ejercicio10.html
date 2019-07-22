@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Ejercicio JS</title>
+        <script>
+            var numero1 = parseFloat(prompt('Ingrese el primer numero'));
+            var numero2 = parseFloat(prompt('Ingrese el segundo numero'));
+            var operador = prompt('Ingrese un operador +, -, *, /, %');
+
+            switch (operador) {
+                case '+':
+                    resultado = numero1 + numero2;
+                    document.write('Usted eligió suma, el resultado es: ' + resultado);
+                    break;
+                case '-':
+                    resultado = numero1 - numero2;
+                    document.write('Usted eligió resta, el resultado es: ' + resultado);
+                    break;
+                case '*':
+                    resultado = numero1 * numero2;
+                    document.write('Usted eligió multiplicacion, el resultado es: ' + resultado);
+                    break;
+                case '/':
+                    resultado = numero1 / numero2;
+                    document.write('Usted eligió division, el resultado es: ' + resultado);
+                    break;
+                case '%':
+                    resultado = numero1 % numero2;
+                    document.write('Usted eligió modulo, el resultado es: ' + resultado);
+                    break;
+                default:
+                    document.write('Usted no eligió ninguna operación aceptada');
+            }
+        </script>
+    </head>
+    <body>
+        <!-- Se le solicita al usuario que ingrese dos números y un operador (+, -, *, /, %). Realice el algoritmo para calcular e informar la operación deseada entre los dos números. -->
+    </body>
+</html>

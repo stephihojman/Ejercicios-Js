@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Ejercicio JS</title>
+        <script>
+            var sueldoMensual = parseInt(prompt('Ingrese su sueldo básico mensual'));
+            var cantidadSeguros = parseInt(prompt('Ingrese la cantidad de seguros vendidos'));
+            var valorMayorSeguro = parseInt(prompt('Ingrese el valor del seguro más caro vendido'));
+            var premio1 = (25 / 100) * valorMayorSeguro;
+            var premio2 = (15 / 100) * cantidadSeguros;
+            var sueldoFinal = sueldoMensual + premio1 + premio2;
+            document.write('Su sueldo mensual es de: $' + sueldoFinal + '');
+            console.log(sueldoMensual, cantidadSeguros, valorMayorSeguro, premio1, premio2, sueldoFinal);
+        </script>
+    </head>
+    <body>
+        <!-- Se le solicita al usuario que ingrese tres valores numéricos. Realice el algoritmo para que si el primer valor ingresado es mayor que el segundo, pero menor que el tercero se debe calcular e infromar la multiplicación entre los tres valores. En cualquier otro caso, calcular e informar la suma entre los tres valores e indicar si el resultado es un valor par o impar. -->
+    </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Ejercicio JS</title>
+        <script>
+            var letra = prompt('Ingrese una letra').toLocaleLowerCase();
+            // const msgNotVocal = 'La letra ingresada NO es una vocal';
+            // const msgVocal = 'La letra ingresada es una vocal';
+            // var isVocal = new RegExp('[aeiou]');
+
+            // document.write(isVocal.test(letra) ? msgVocal : msgNotVocal);
+            //isVocal.test(letra) ? document.write(msgVocal) : document.write(msgNotVocal);
+
+            if (letra == 'a' || letra == 'e' || letra == 'i' || letra == 'o' || letra == 'u') {
+                document.write('La letra ingresada es una vocal');
+            } else {
+                document.write('La letra ingresada no es una vocal');
+            }
+        </script>
+    </head>
+    <body>
+        <!-- Se le solicita al usuario que ingrese una letra. Realice el algoritmo para informar si la letra ingresada es una vocal o una consonante. -->
+    </body>
+</html>

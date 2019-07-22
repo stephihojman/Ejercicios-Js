@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Ejercicio JS</title>
+        <script>
+            var valorHora = parseInt(prompt('Ingrese el valor de la hora de trabajo'));
+            var cantidadHoras = parseInt(prompt('Ingrese la cantidad de horas trabajadas en un mes'));
+            var antigüedad = parseInt(prompt('Ingrese los años de antigüedad en la empresa'));
+            var cantidadSeguros = parseInt(prompt('Ingrese la cantidad de seguros vendidos'));
+            var valorMayorSeguro = parseInt(prompt('Ingrese el valor del seguro más caro vendido'));
+            var sueldoMensual = valorHora * cantidadHoras;
+            var premio1 = (50 / 100) * valorMayorSeguro;
+            var premio2 = (20 / 100) * sueldoMensual * cantidadSeguros;
+            var premio3 = (10 / 100) * sueldoMensual * antigüedad;
+            var sueldoFinal = sueldoMensual + premio1 + premio2 + premio3;
+            var promedioHoras = sueldoFinal / cantidadHoras;
+            document.write('Su sueldo total mensual es de: $' + sueldoFinal + ' y el valor promedio de la hora es de: $' + promedioHoras + '');
+            console.log(
+                valorHora,
+                cantidadHoras,
+                antigüedad,
+                cantidadSeguros,
+                valorMayorSeguro,
+                sueldoMensual,
+                premio1,
+                premio2,
+                premio3,
+                sueldoFinal,
+                promedioHoras
+            );
+        </script>
+    </head>
+    <body>
+        <!-- Realizar un sistema para el cálculo de sueldo de una empresa de seguros. Se le solicita al empleado que ingrese el valor de la hora, la cantidad de horas trabajadas en el mes, los años de antigüedad, la cantidad de seguros vendidos y el valor del seguro más caro vendido. Realice el algoritmo para calcular e informar el sueldo de un empleado en el mes, teniendo en cuenta que se le asigna un premio igual al 50% del seguro más caro vendido, un premio igual al 20% del sueldo por la cantidad de seguros vendidos y otro premio igual al 10% del sueldo por año de antigüedad. Una vez obtenido el sueldo final, calcular e informar el valor promedio de la hora del empleado. -->
+    </body>
+</html>
