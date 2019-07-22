@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Ejercicio JS</title>
+        <script>
+            var sueldoMensual = parseInt(prompt('Ingrese su sueldo básico mensual'));
+            var cantidadSeguros = parseInt(prompt('Ingrese la cantidad de seguros vendidos'));
+            var valorMayorSeguro = parseInt(prompt('Ingrese el valor del seguro más caro vendido'));
+            var premio1 = (25 / 100) * valorMayorSeguro;
+            var premio2 = (15 / 100) * cantidadSeguros;
+            var sueldoFinal = sueldoMensual + premio1 + premio2;
+            document.write('Su sueldo mensual es de: $' + sueldoFinal + '');
+            console.log(sueldoMensual, cantidadSeguros, valorMayorSeguro, premio1, premio2, sueldoFinal);
+        </script>
+    </head>
+    <body>
+        <!-- Realizar un sistema para el cálculo de sueldo de una empresa. Se le solicita al usuario que ingrese la categoría a la que pertenece que define el sueldo básico mensual (categoría 1: $3000, categoría 2: $4000, categoría 3: $5000, categoría 4: $6000), las horas extras y los años de antigüedad. Se sabe que:
+        a.Si es de la categoría 1 y trabajó más de 20 horas extra, suma un premio de $500 más.
+        b.Si es de la categoría 3 y tiene más de 5 años de antigüedad, suma un premio de $1000 más.
+        c.Todos las categorías reciben un premio de $50 por año de antigüedad.
+ 		d.Realice el algoritmo para calcular e informar el sueldo de un empleado en el mes, e indicar si su sueldo supera los $7000.-->
+    </body>
+</html>

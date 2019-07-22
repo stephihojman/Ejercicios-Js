@@ -6,14 +6,27 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title>Ejercicio JS</title>
         <script>
-            var sueldoMensual = parseInt(prompt('Ingrese su sueldo básico mensual'));
-            var cantidadSeguros = parseInt(prompt('Ingrese la cantidad de seguros vendidos'));
-            var valorMayorSeguro = parseInt(prompt('Ingrese el valor del seguro más caro vendido'));
-            var premio1 = (25 / 100) * valorMayorSeguro;
-            var premio2 = (15 / 100) * cantidadSeguros;
-            var sueldoFinal = sueldoMensual + premio1 + premio2;
-            document.write('Su sueldo mensual es de: $' + sueldoFinal + '');
-            console.log(sueldoMensual, cantidadSeguros, valorMayorSeguro, premio1, premio2, sueldoFinal);
+            var rangoMenor = parseInt(prompt('Ingrese el extremo menor del rango numérico'));
+            var rangoMayor = parseInt(prompt('Ingrese el extremo mayor del rango numérico'));
+            var numero = parseInt(prompt('Ingrese un número'));
+            var dif = rangoMayor - rangoMenor;
+            if (dif >= 5) {
+                if (numero > rangoMenor && numero < rangoMayor) {
+                    if (numero % 2 == 0) {
+                        document.write('El número es par y está dentro del rango. ');
+                    } else {
+                        document.write('El número es inpar y está dentro del rango. ');
+                    }
+                } else {
+                    if (numero % 2 == 0) {
+                        document.write('El número es par y no está dentro del rango. ');
+                    } else {
+                        document.write('El número es impar y no está dentro del rango. ');
+                    }
+                }
+            } else {
+                document.write('El rango tiene menos de 5 valores');
+            }
         </script>
     </head>
     <body>
