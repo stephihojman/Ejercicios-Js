@@ -6,17 +6,24 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title>Ejercicio JS</title>
         <script>
-            var sueldoMensual = parseInt(prompt('Ingrese su sueldo básico mensual'));
-            var cantidadSeguros = parseInt(prompt('Ingrese la cantidad de seguros vendidos'));
-            var valorMayorSeguro = parseInt(prompt('Ingrese el valor del seguro más caro vendido'));
-            var premio1 = (25 / 100) * valorMayorSeguro;
-            var premio2 = (15 / 100) * cantidadSeguros;
-            var sueldoFinal = sueldoMensual + premio1 + premio2;
-            document.write('Su sueldo mensual es de: $' + sueldoFinal + '');
-            console.log(sueldoMensual, cantidadSeguros, valorMayorSeguro, premio1, premio2, sueldoFinal);
+            var lado1 = parseInt(prompt('Ingrese el primer lado de un triángulo'));
+            var lado2 = parseInt(prompt('Ingrese el segundo lado de un triángulo'));
+            var lado3 = parseInt(prompt('Ingrese el tercero lado de un triángulo'));
+            if ((lado1 == lado2) == lado3) {
+                document.write('El triángulo es equilátero.');
+            } else if ((lado1 == lado2) != lado3) {
+                document.write('El triángulo es isósceles.');
+            } else if ((lado1 == lado3) != lado2) {
+                document.write('El triángulo es isósceles.');
+            } else if ((lado2 == lado3) != lado1) {
+                document.write('El triángulo es isósceles.');
+            } else {
+                //deberia funcionar o tiene que ir un else if?
+                document.write('El triángulo es escaleno.');
+            }
         </script>
     </head>
     <body>
-        <!-- Se le solicita al usuario que ingrese los tres lados de un triángulo. Realice el algoritmo para informar si el triángulo es equilatero, isósceles o escaleno. No se pueden utilizar operadore lógicos AND y OR. -->
+        <!-- Se le solicita al usuario que ingrese los tres lados de un triángulo. Realice el algoritmo para informar si el triángulo es equilatero, isósceles o escaleno. No se pueden utilizar operadores lógicos AND y OR. -->
     </body>
 </html>

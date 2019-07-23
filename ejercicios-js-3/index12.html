@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Ejercicio JS</title>
+        <script>
+            do {
+                var nombreAlumno = prompt('Ingrese el nombre del alumno');
+                var nota = parseInt(prompt('Ingrese la nota del alumno'));
+
+                if (nota > 0 && nota < 11) {
+                    if (nota < 4) {
+                        document.write('La nota de ' + nombreAlumno + 'es menor a 4. <br />');
+                    } else if (nota == 4) {
+                        document.write('La nota de ' + nombreAlumno + 'es igual a 4. <br />');
+                    } else {
+                        document.write('La nota de ' + nombreAlumno + 'es mayor a 4. <br />');
+                    }
+                } else {
+                    document.write('La nota ingresada no es valida. <br />');
+                }
+
+                r = confirm('Desea seguir ingresando alumnos?');
+            } while (r);
+        </script>
+    </head>
+    <body>
+        <!-- Se le solicita al usuario que ingrese los extremos de un rango numérico y una cantidad de valores desconocidas. Realice el algoritmo para informar si cada número está dentro del rango. Si está, informar si el número es impar. Si no está dentro del rango, informar si es número es par. Tenga en cuenta que el rango debe tener una diferencia mínima de 10 números enteros. Informar cuál es menor y el mayor valor ingresado. Todos los valores deben ser validados.-->
+    </body>
+</html>

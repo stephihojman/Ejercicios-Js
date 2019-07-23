@@ -12,6 +12,10 @@
                 do {
                     var nota = parseFloat(prompt('Ingrese la nota del alumno'));
                 } while (isNaN(nota));
+                // do {
+                //     var nombreAlumno = prompt('Ingrese el nombre y apellido del alumno');
+                // } while (typeof nombreAlumno == 'string');
+
                 if (nota > 0 && nota < 11) {
                     if (nota < 7) {
                         document.write('La nota de ' + nombreAlumno + 'es menor a 7. <br />');
@@ -24,7 +28,7 @@
                     document.write('La nota ingresada no es valida. <br />');
                 }
 
-                r = confirm('Desea seguir ingresando alumnos?');
+                var r = confirm('Desea seguir ingresando alumnos?');
             } while (r);
         </script>
     </head>

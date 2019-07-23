@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Ejercicio JS</title>
+        <script>
+            do {
+                var nombreAlumno = prompt('Ingrese el nombre del alumno');
+                var nota = parseInt(prompt('Ingrese la nota del alumno'));
+
+                if (nota > 0 && nota < 11) {
+                    if (nota < 4) {
+                        document.write('La nota de ' + nombreAlumno + 'es menor a 4. <br />');
+                    } else if (nota == 4) {
+                        document.write('La nota de ' + nombreAlumno + 'es igual a 4. <br />');
+                    } else {
+                        document.write('La nota de ' + nombreAlumno + 'es mayor a 4. <br />');
+                    }
+                } else {
+                    document.write('La nota ingresada no es valida. <br />');
+                }
+
+                r = confirm('Desea seguir ingresando alumnos?');
+            } while (r);
+        </script>
+    </head>
+    <body>
+        <!-- Se le solicita al usuario que ingrese una cantidad desconocida de números. Realice el algoritmo para calcular e informar:
+        La cantidad de valores múltiplos de 4 y de 7.
+        La sumatoria de los valores ingresados en orden impar.
+        El menor valor ingresado.
+        El mayor valor ingresado.
+        Todos los valores deben ser validados.-->
+    </body>
+</html>

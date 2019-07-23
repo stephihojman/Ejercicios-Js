@@ -6,14 +6,21 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title>Ejercicio JS</title>
         <script>
-            var sueldoMensual = parseInt(prompt('Ingrese su sueldo básico mensual'));
-            var cantidadSeguros = parseInt(prompt('Ingrese la cantidad de seguros vendidos'));
-            var valorMayorSeguro = parseInt(prompt('Ingrese el valor del seguro más caro vendido'));
-            var premio1 = (25 / 100) * valorMayorSeguro;
-            var premio2 = (15 / 100) * cantidadSeguros;
-            var sueldoFinal = sueldoMensual + premio1 + premio2;
-            document.write('Su sueldo mensual es de: $' + sueldoFinal + '');
-            console.log(sueldoMensual, cantidadSeguros, valorMayorSeguro, premio1, premio2, sueldoFinal);
+            var valorHora = parseInt(prompt('Ingrese el valor de la hora de trabajo'));
+            var cantidadHoras = parseInt(prompt('Ingrese la cantidad de horas trabajadas en un mes'));
+            var antigüedad = parseInt(prompt('Ingrese los años de antigüedad en la empresa'));
+            var sueldoMensual = valorHora * cantidadHoras;
+            var premio1 = (10 / 100) * sueldoMensual * antigüedad;
+            var premio2 = (5 / 100) * sueldoMensual;
+            var premio3 = (10 / 100) * sueldoMensual;
+
+            if (cantidadHoras > 110) {
+                document.write('Su sueldo total mensual es de: $' + sueldoMensual + premio1 + premio2);
+            } else if (cantidadHoras > 220) {
+                document.write('Su sueldo total mensual es de: $' + sueldoMensual + premio1 + premio3);
+            } else {
+                document.write('Su sueldo total mensual es de: $' + sueldoMensual + premio1);
+            }
         </script>
     </head>
     <body>
