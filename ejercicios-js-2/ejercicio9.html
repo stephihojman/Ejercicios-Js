@@ -6,14 +6,20 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title>Ejercicio JS</title>
         <script>
-            var sueldoMensual = parseInt(prompt('Ingrese su sueldo básico mensual'));
-            var cantidadSeguros = parseInt(prompt('Ingrese la cantidad de seguros vendidos'));
-            var valorMayorSeguro = parseInt(prompt('Ingrese el valor del seguro más caro vendido'));
-            var premio1 = (25 / 100) * valorMayorSeguro;
-            var premio2 = (15 / 100) * cantidadSeguros;
-            var sueldoFinal = sueldoMensual + premio1 + premio2;
-            document.write('Su sueldo mensual es de: $' + sueldoFinal + '');
-            console.log(sueldoMensual, cantidadSeguros, valorMayorSeguro, premio1, premio2, sueldoFinal);
+            var numero1 = parseFloat(prompt('Ingrese el primer valor'));
+            var numero2 = parseFloat(prompt('Ingrese el segundo valor'));
+            var numero3 = parseFloat(prompt('Ingrese el tercer valor'));
+            var multiplicación = numero1 * numero2 * numero3;
+            var suma = numero1 + numero2 + numero3;
+            if (numero1 > numero2 && numero1 < numero3) {
+                document.write('El resultado de la multiplicación de los 3 valores es ' + multiplicación);
+            } else {
+                if (suma % 2 == 0) {
+                    document.write('El resultado de la suma es: ' + suma + ' y es par.');
+                } else {
+                    document.write('El resultado de la suma es: ' + suma + ' y es impar.');
+                }
+            }
         </script>
     </head>
     <body>
