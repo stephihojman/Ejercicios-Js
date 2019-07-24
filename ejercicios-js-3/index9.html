@@ -6,24 +6,29 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title>Ejercicio JS</title>
         <script>
+            var nota = parseInt(prompt('Ingrese la nota del alumno'));
+            var cantAprobados = 0;
+            var cantDesaprobados = 0;
             do {
-                var nombreAlumno = prompt('Ingrese el nombre del alumno');
-                var nota = parseInt(prompt('Ingrese la nota del alumno'));
+                do {
+                    nota = parseFloat(prompt('Ingrese una nota mayor a 0 y menor a 11'));
+                } while (nota >= 1 && nota <= 10);
 
-                if (nota > 0 && nota < 11) {
-                    if (nota < 4) {
-                        document.write('La nota de ' + nombreAlumno + 'es menor a 4. <br />');
-                    } else if (nota == 4) {
-                        document.write('La nota de ' + nombreAlumno + 'es igual a 4. <br />');
-                    } else {
-                        document.write('La nota de ' + nombreAlumno + 'es mayor a 4. <br />');
-                    }
+                if (nota >= 4) {
+                    cantAprobados++;
                 } else {
-                    document.write('La nota ingresada no es valida. <br />');
+                    cantDesaprobados++;
                 }
 
-                r = confirm('Desea seguir ingresando alumnos?');
+                //sumaNotas=sumaNotas +notas
+                sumaNotas += nota;
+
+                var r = confirm('Desea seguir ingresando notas?');
             } while (r);
+            var canTotal = cantAprobados + cantDesaprobados;
+            var promedioTotal = sumaNotas / canTotal;
+            document.write('Cantidad de aprobados: ' + cantAprobados);
+            document.write('Cantidad de desaprobados: ' + cantDesaprobados);
         </script>
     </head>
     <body>
